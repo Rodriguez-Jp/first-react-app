@@ -8,7 +8,6 @@ function Booklist() {
   return (
     <section className="booklist">
       {books.map((book) => {
-        console.log({ ...book });
         return <Book key={book.id} {...book}></Book>;
       })}
     </section>
